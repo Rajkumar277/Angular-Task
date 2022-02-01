@@ -1,0 +1,25 @@
+<div class="container mt-5">
+  <h4>Angular Task</h4>
+  <div class="row  mt-4">
+    <div class="col-12">
+      <div class="container">
+        <div class="input-group mb-3">
+          <!-- <form id="form" class="inline-form"> -->
+          <input [(ngModel)]="searchTerm" name="searchTerm" type="search" class="form-control" placeholder="Search">
+          <button (click)="onSearchCustomer()" class="btn btn-success" type="submit">Search</button>
+          <!-- </form> -->
+
+        </div>
+        <!-- <form id="form" class="inline-form">
+          <input (keyup)="onSearchCustomer($event)" class="form-control" type="search" id="query" name="q"
+            placeholder="Search...">
+        </form> -->
+      </div>
+    </div>
+
+    <div class="col-12 mt-4">
+      <h4>Book Details</h4>
+      <app-book-result [book_result]="book_details"></app-book-result>
+    </div>
+  </div>
+</div>

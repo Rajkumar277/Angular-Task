@@ -1,0 +1,33 @@
+.image-main-div {
+    text-align: center;
+    .image {
+      width: 100%;
+      height: fit-content;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  }
+  
+  
+  .main-content {
+      padding: 10px;
+  }
+  
+  
+  .sub-content {
+      width: 100%; 
+      color: #6a6a6a;
+      .left {
+          text-align: left;
+          float: left;
+      }
+      .right {
+          text-align: right;
+          float: right;
+      }
+  }
+  
+  .btn-right {
+      text-align: right;
+  }
+  

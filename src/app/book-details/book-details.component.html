@@ -1,0 +1,28 @@
+<div class="container">
+  <div class=" mt-2" *ngFor="let data of book_details">
+
+    <div class="row main-content">
+      <div class="col-sm-2 image-main-div">
+        <img src="/assets/imgs/download.png" class="image">
+      </div>
+
+      <div class="col-sm-10">
+        <h5>{{ data.title }}</h5>
+
+        <h6>Subject List</h6>
+        <ul *ngFor="let subject of data.subjects">
+          <li> {{ subject}}</li>
+        </ul>
+
+        <div class="mt-1 sub-content">
+          <span class="left">Created Date: {{ data.created.value | date: 'dd-MMM-y hh:mm:ss a' }}</span>
+          <span class="right">Publish Date: {{ data.publish_date }}</span>
+        </div>
+        <div class="row  sub-content">
+          <span class="left">Publisher: {{ data.publishers[0] }}</span>
+          <span class="right">Publish Place: {{ data.publish_places[0] }}</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
